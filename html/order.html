@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR. COFFEE</title>
+    <link rel="icon" type="image/x-icon" href="/assets/vectors/icon_offwhite.svg">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <div id="header-div">
+            <a href="/html/home.html">
+                <img src="/assets/vectors/typeface_blue.svg" id="header-logo"> 
+            </a>
+            <div id="navbar">
+                <a href="/html/home.html">home</a>
+                <a href="/html/menu.html">menu</a>
+                <a class="active">order</a>
+                <a href="/html/rewards.html">rewards</a>
+                <a href="/html/about us.html">about us</a>
+            </div>
+            <div id="navbar-mobile">
+                <img src="/assets/vectors/hamburger-svgrepo-com.svg" id="hamburger"> 
+            </div>
+        </div>
+        <div id="navbar-popup" class="hidden">
+            <div id="sidebar">
+                <div id="sidebar-navbar">
+                    <a href="/html/home.html">home</a>
+                    <a href="/html/menu.html">menu</a>
+                    <a class="active">order</a>
+                    <a href="/html/rewards.html">rewards</a>
+                    <a href="/html/about us.html">about us</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="order-div">
+            <h1 class="blue-text">YOUR ORDER</h1>
+            <div id="order-container" class="fade">
+                <div id="receipt">
+                    <div id="receipt-title">
+                        <p>--------------------------------------------------</p>
+                        <p>Receipt</p>
+                        <p>--------------------------------------------------</p>
+                    </div>
+                    <div id="receipt-details">
+                        <p class="bold">Order</p>
+                        <div id="receipt-orders">
+                        </div>
+                        <p class="bold">Add-ons</p>
+                        <div id="receipt-addons">
+                            <div class="receipt-item">
+                                <div class="receipt-item-name">
+                                    <p>-</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="receipt-total">
+                        <div id="receipt-subtotal">
+                            <p class="bold">Subtotal</p>
+                            <p id="subtotal-nominal">-</p>
+                        </div>
+                        <p>--------------------------------------------------</p>
+                        <p class="bold" id="total-nominal">TOTAL: -</p>
+                        <p>--------------------------------------------------</p>
+                    </div>
+                </div>
+                <div id="order-container-right">
+                    <p class="brown-text">But wait! Before checking out, we need to know you first!</p>
+                    <div id="order-box">
+                        <form onkeydown="return event.key != 'Enter';" name="form">
+                            <div>
+                                <p>NAME</p>
+                                <input type="text" id="form-name" autocomplete="off" name="form-name">
+                                <p>EMAIL</p>
+                                <input type="text" id="form-email" autocomplete="off" name="form-email">
+                                <p>ADDRESS</p>
+                                <input type="text" id="form-address" autocomplete="off" name="form-address">
+                                <p>ADD-ONS</p>
+                                <div id="form-addons">
+                                    <div class="form-addons-col">
+                                        <label>
+                                            <input type="checkbox" class="addon">
+                                            <span class="checkmark"></span>
+                                            <span class="checkmark-after"></span>
+                                            <p>less sugar</p>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" class="addon">
+                                            <span class="checkmark"></span>
+                                            <span class="checkmark-after"></span>
+                                            <p>no sugar</p>
+                                        </label>
+                                    </div>
+                                    <div class="form-addons-col">
+                                        <label>
+                                            <input type="checkbox" class="addon">
+                                            <span class="checkmark"></span>
+                                            <span class="checkmark-after"></span>
+                                            <p>less ice</p>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" class="addon">
+                                            <span class="checkmark"></span>
+                                            <span class="checkmark-after"></span>
+                                            <p>straw</p>
+                                        </label>
+                                    </div>
+                                    <div class="form-addons-col">
+                                        <label>
+                                            <input type="checkbox" class="addon">
+                                            <span class="checkmark"></span>
+                                            <span class="checkmark-after"></span>
+                                            <p>tissue</p>
+                                        </label>
+                                    </div>
+                                </div>
+                                <p>PAYMENT</p>
+                                <div id="form-payment">
+                                    <div class="form-payment-col">
+                                        <label>
+                                            <input type="radio" name="payment">
+                                            <span class="checkmark"></span>
+                                            <span class="checkmark-after"></span>
+                                            <p>BCA Q-RIS</p>
+                                        </label>
+                                    </div>
+                                    <div class="form-payment-col">
+                                        <label>
+                                            <input type="radio" name="payment">
+                                            <span class="checkmark"></span>
+                                            <span class="checkmark-after"></span>
+                                            <p>OVO</p>
+                                        </label>
+                                    </div>
+                                    <div class="form-payment-col">
+                                        <label>
+                                            <input type="radio" name="payment">
+                                            <span class="checkmark"></span>
+                                            <span class="checkmark-after"></span>
+                                            <p>GoPay</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" id="check-out-button">Check Out</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="order-complete" class="hidden">
+            <h1 class="blue-text">Your order is heard!</h1>
+            <div id="order-complete-container">
+                <img src="/assets/vectors/SVG/Artboard 1 copy 51.svg">
+                <h2>Please wait for your order to arrive. Thank you for your trust!</h2>
+                <button id="complete-button" onclick="document.location='menu.html'">Back to Menu</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="/assets/vectors/typeface_white.svg" id="footer-logo"> 
+        <div id="footer-div">
+            <div>
+                <p class="footer-header">Find us at</p>
+                <p>BINUS Alam Sutera</p>
+            </div>
+            <div>
+                <p class="footer-header">Contact Us</p>
+                <p>Instagram: @mr.coffee</p>
+                <p>Email: mrcoffee@gmail.com</p>
+            </div>
+            <div style="margin-right: 6vw;">
+                <p class="footer-header">More</p>
+                <a href="/html/about us.html"><p>About Us</p></a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="/js/script.js"></script>
+<script src="/js/order.js"></script>
+</body>
+</html>

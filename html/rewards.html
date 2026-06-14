@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR. COFFEE</title>
+    <link rel="icon" type="image/x-icon" href="/assets/vectors/icon_offwhite.svg">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <div id="header-div">
+            <a href="/html/home.html">
+                <img src="/assets/vectors/typeface_blue.svg" id="header-logo"> 
+            </a>
+            <div id="navbar">
+                <a href="/html/home.html">home</a>
+                <a href="/html/menu.html">menu</a>
+                <a href="/html/order.html">order</a>
+                <a class="active">rewards</a>
+                <a href="/html/about us.html">about us</a>
+            </div>
+            <div id="navbar-mobile">
+                <img src="/assets/vectors/hamburger-svgrepo-com.svg" id="hamburger"> 
+            </div>
+        </div>
+        <div id="navbar-popup" class="hidden">
+            <div id="sidebar">
+                <div id="sidebar-navbar">
+                    <a href="/html/home.html">home</a>
+                    <a href="/html/menu.html">menu</a>
+                    <a href="/html/order.html">order</a>
+                    <a class="active">rewards</a>
+                    <a href="/html/about us.html">about us</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="rewards-popup" class="hidden">
+            <div class="popup">
+                <span class="close" id="rewards-close">x</span>
+                <div class="left-popup">
+                    <h1>DOWNLOAD OUR MOBILE APP</h1>
+                    <h2>to enjoy a better experience</h2>
+                </div>
+                <div class="right-popup">
+                    <img src="/assets/images/app logo.png">
+                    <div class="app-downloads">
+                        <a href="https://play.google.com/store/games?hl=en" target="_blank"><img src="/assets/images/google play.png"></a>
+                        <a href="https://www.apple.com/id/app-store/" target="_blank"><img src="/assets/images/app store.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rewards-div">
+            <h1 class="blue-text">REWARDS BOARD</h1>
+            <div id="rewards-container" class="fade">
+                <div id="rewards-container-left">
+                    <div class="corkboard" id="rewards-corkboard">
+                        <div id="main-reward">
+                            <img src="/assets/images/dummy reward.png">
+                        </div>
+                        <div id="sub-rewards">
+                            <div class="sub-rewards-row">
+                                <img src="/assets/images/dummy reward 2.png">
+                                <img src="/assets/images/dummy reward 3.png">
+                            </div>
+                            <div class="sub-rewards-row">
+                                <img src="/assets/images/dummy reward 4.png">
+                                <img src="/assets/images/dummy reward 5.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="rewards-container-right">
+                    <p>Download our app for a better experience!</p>
+                    <img src="/assets/images/app logo.png">
+                    <div class="app-downloads">
+                        <a href="https://play.google.com/store/games?hl=en" target="_blank"><img src="/assets/images/google play.png"></a>
+                        <a href="https://www.apple.com/id/app-store/" target="_blank"><img src="/assets/images/app store.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="/assets/vectors/typeface_white.svg" id="footer-logo"> 
+        <div id="footer-div">
+            <div>
+                <p class="footer-header">Find us at</p>
+                <p>BINUS Alam Sutera</p>
+            </div>
+            <div>
+                <p class="footer-header">Contact Us</p>
+                <p>Instagram: @mr.coffee</p>
+                <p>Email: mrcoffee@gmail.com</p>
+            </div>
+            <div style="margin-right: 6vw;">
+                <p class="footer-header">More</p>
+                <a href="/html/about us.html"><p>About Us</p></a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="/js/script.js"></script>
+<script src="/js/rewards.js"></script>
+</body>
+</html>
