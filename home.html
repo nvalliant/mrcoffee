@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR. COFFEE</title>
+    <link rel="icon" type="image/x-icon" href="/assets/vectors/icon_offwhite.svg">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <div id="header-div">
+            <a>
+                <img src="/assets/vectors/typeface_blue.svg" id="header-logo"> 
+            </a>
+            <div id="navbar">
+                <a class="active">home</a>
+                <a href="/html/menu.html">menu</a>
+                <a href="/html/order.html">order</a>
+                <a href="/html/rewards.html">rewards</a>
+                <a href="/html/about us.html">about us</a>
+            </div>
+            <div id="navbar-mobile">
+                <img src="/assets/vectors/hamburger-svgrepo-com.svg" id="hamburger"> 
+            </div>
+        </div>
+        <div id="navbar-popup" class="hidden">
+            <div id="sidebar">
+                <div id="sidebar-navbar">
+                    <a class="active">home</a>
+                    <a href="/html/menu.html">menu</a>
+                    <a href="/html/order.html">order</a>
+                    <a href="/html/rewards.html">rewards</a>
+                    <a href="/html/about us.html">about us</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="main-banner">
+            <div class="title-div fade">
+                <img src="/assets/vectors/icon_offwhite.svg" id="banner-logo"> 
+                <h1 id="main-banner-title" class="offwhite-text">SIP & SAVIOUR!</h1>
+                <h2 id="tagline" class="offwhite-text">MR. COFFEE will make you stay inspired</h2>
+            </div>
+            <img src="/assets/images//main banner coffee.png" id="coffee-banner" class="fade">
+        </div>
+
+        <div id="top-sellers-banner">
+            <div class="side-title-div">
+                <h1 class="offwhite-text">OUR</h1>
+                <h1 class="offwhite-text">TOP</h1>
+                <h1 class="offwhite-text">BREWS</h1>
+                <button id="menu-redirect" onclick="document.location='menu.html'">See Menu Book</button>
+            </div>
+            <div id="best-seller-items-div">
+                <div id="left-arrow" class="arrows">
+                    &lt;
+                </div>
+                <div id="carousel">
+                </div>
+                <div id="right-arrow" class="arrows">
+                    &gt;
+                </div>
+            </div>
+        </div>
+
+        <div id="rewards-banner">
+            <h1 class="blue-text">TODAY'S REWARDS</h1>
+            <div class="corkboard" id="home-corkboard">
+                <img src="/assets/images/dummy reward.png"> 
+            </div>
+            <button id="rewards-redirect" onclick="document.location='rewards.html'">See More Rewards</button>
+        </div>
+
+        <div id="about-us-banner">
+            <img src="/assets/images/ceo.png">
+            <div id="about-us-text">
+                <h2 class="white-text">Meet our CEO</h2>
+                <p class="white-text">
+                    At MR.COFFEE, we believe a good cup of coffee should feel like coming home — comforting, honest, and crafted with love. Born from a passion for storytelling, creativity, and quality brews, MR.COFFEE isn’t just a place to grab your morning fix — it’s a place where ideas percolate, friendships are brewed, and every sip tells a story.
+                </p>
+                <button id="about-us-redirect" onclick="document.location='about us.html'">More About Us</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="/assets/vectors/typeface_white.svg" id="footer-logo"> 
+        <div id="footer-div">
+            <div>
+                <p class="footer-header">Find us at</p>
+                <p>BINUS Alam Sutera</p>
+            </div>
+            <div>
+                <p class="footer-header">Contact Us</p>
+                <p>Instagram: @mr.coffee</p>
+                <p>Email: mrcoffee@gmail.com</p>
+            </div>
+            <div style="margin-right: 6vw;">
+                <p class="footer-header">More</p>
+                <a href="/html/about us.html"><p>About Us</p></a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="/js/script.js"></script>
+<script src="/js/home.js"></script>
+</html>
